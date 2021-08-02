@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding:0;
+}
+body{
+  min-height: 100vh;
+  background: linear-gradient(301deg, #C490E4, #F6C6EA);
+  font-family: 'Heebo', sans-serif;
+}
+.head-img{
+  height: 2rem;
+  margin-left: 1rem;
+}
+header{
+font-size: 2rem;
+font-weight: 600;
+}
+
+header,form{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 5rem;
+}
+form>button{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  border: none;
+  outline: none;
+  background-color: #C67ACE;
+  border-radius: 50%;
+  padding: 10px 10px;
+  font-size: 1.2rem;
+  color: white;
+  margin-left: 1rem;
+}
+input[type="text"]{
+  border: none;
+  outline: none;
+  height: 2rem;
+  width: 15rem;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  box-shadow: inset 0 -3px 0 0 #C67ACE;
+  font-size: 1.5rem
+}
+
+  input[type="text"]:focus{
+    outline: none;
+    box-shadow: inset 0 -3px 0 0 #C67ACE;
+  }
+
+.todo-ul-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.list{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: 1rem;
+  background-color: white;
+  min-height: 2rem;
+  min-width: 15rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.list-item{
+  background-color: #fff;
+  min-width: 10rem;
+  height: 1.5rem;
+  border-radius: 0.3rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  text-align: center;
+}
+
+.completeBtn,
+.deletedBtn,
+.editBtn{
+  font-size: 1.5rem;
+ cursor:pointer;
+  /* pointer-events: none; */
+  border: none;
+  /* margin: 4px ; */
+  background-color: #C67ACE;
+  border: 2px solid white;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.fa-trash,
+.fa-check,
+.fa-edit{
+  pointer-events: none;
+}
+.line-through{
+  text-decoration-line: line-through;
+}
